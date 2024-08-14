@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'MJRefresh_ZK'
-    s.version      = '3.8.1'
+    s.version      = '3.8.2'
     s.summary      = 'An easy way to use pull-to-refresh'
     s.homepage     = 'https://github.com/CoderMJLee/MJRefresh'
     s.license      = 'MIT'
@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
     s.resource = 'MJRefresh/MJRefresh.bundle'
     s.resource_bundles = { 'MJRefresh.Privacy' => 'MJRefresh/PrivacyInfo.xcprivacy' }
     s.requires_arc = true
+    s.ios.deployment_target = '8.0'
     s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
